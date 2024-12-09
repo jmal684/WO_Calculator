@@ -1,5 +1,5 @@
 .keyboard_button{
-    -fx-background-color:  #d9e5f0;
+    -fx-background-color:  #f3f8fc;
     -fx-border-style: solid;
     -fx-border-color:  #8996a4;
     -fx-border-width: 1;
@@ -12,7 +12,22 @@
     
 }
 
+.keyboard_button:hover{
+    -fx-background-color: #ebf3fa;
+}
+.keyboard_button:pressed{
+    -fx-background-color: #adcfeb;
+}
+
+
 .radio_button{
+    -fx-text-fill: #395c76;
+    -fx-font-weight: bold;
+}
+
+.binary_represantation_button{
+    -fx-padding: 0,0,0,0;
+    -fx-background-color:   #d9e5f0;
     -fx-text-fill: #395c76;
     -fx-font-weight: bold;
 }
