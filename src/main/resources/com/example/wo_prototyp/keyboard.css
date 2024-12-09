@@ -1,0 +1,18 @@
+.keyboard_button{
+    -fx-background-color:  #d9e5f0;
+    -fx-border-style: solid;
+    -fx-border-color:  #8996a4;
+    -fx-border-width: 1;
+    -fx-pref-width: 35;
+    -fx-pref-height: 30;
+    -fx-font-size: 9;
+    -fx-font-family: "Segoe UI";    
+    -fx-text-fill: #395c76;
+    -fx-font-weight: bold;
+    
+}
+
+.radio_button{
+    -fx-text-fill: #395c76;
+    -fx-font-weight: bold;
+}
