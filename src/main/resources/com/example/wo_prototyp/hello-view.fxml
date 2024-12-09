@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: #eef4fc; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
          <opaqueInsets>
@@ -118,7 +118,7 @@
                                     <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
-                              <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1">
+                              <GridPane GridPane.rowIndex="1">
                                  <columnConstraints>
                                     <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
                                     <ColumnConstraints />
@@ -128,6 +128,9 @@
                                  <rowConstraints>
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
+                                 <children>
+                                    <Label text="63" />
+                                 </children>
                               </GridPane>
                            </children>
                            <padding>
@@ -136,6 +139,109 @@
                         </GridPane>
                      </children>
                   </Pane>
+                  <GridPane hgap="10.0" layoutY="42.0" prefHeight="30.0" prefWidth="209.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <GridPane GridPane.columnIndex="3">
+                           <columnConstraints>
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints />
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane>
+                           <columnConstraints>
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints />
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints />
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.columnIndex="2">
+                           <columnConstraints>
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints />
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                              <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
+                           </children>
+                        </GridPane>
+                        <GridPane GridPane.rowIndex="1">
+                           <columnConstraints>
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints />
+                              <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <Label text="31" />
+                           </children>
+                        </GridPane>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" />
+                     </padding>
+                  </GridPane>
                </children>
             </Pane>
             <Pane layoutX="210.0" layoutY="-1.0" prefHeight="76.0" prefWidth="209.0">
@@ -262,6 +368,9 @@
                            <padding>
                               <Insets left="5.0" />
                            </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
                         </GridPane>
                      </children>
                   </Pane>
@@ -377,7 +486,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="47" />
+                                    <Label text="15" />
                                  </children>
                               </GridPane>
                            </children>
