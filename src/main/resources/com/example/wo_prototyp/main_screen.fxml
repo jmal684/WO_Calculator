@@ -556,55 +556,55 @@
                      </rowConstraints>
                      <children>
                         <Button alignment="CENTER" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" styleClass="keyboard_button" stylesheets="@keyboard.css" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Mod" GridPane.columnIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="(" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text=")" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="RoL" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="RoR" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Or" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Xor" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Lsh" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Rsh" GridPane.columnIndex="1" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Not" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="And" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="A" GridPane.columnIndex="2">
+                        <Button fx:id="btn_mod" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Mod" GridPane.columnIndex="1" />
+                        <Button fx:id="btn_left_bracket" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="(" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_right_bracket" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text=")" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_rol" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="RoL" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_ror" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="RoR" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_or" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Or" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_xor" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Xor" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_lsh" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Lsh" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_rsh" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Rsh" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_not" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Not" GridPane.rowIndex="5" />
+                        <Button fx:id="btn_and" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="And" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Button fx:id="btn_A" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="A" GridPane.columnIndex="2">
                            <font>
                               <Font name="Segoe UI" size="12.0" />
                            </font>
                         </Button>
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="B" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="D" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="E" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="F" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MS" GridPane.columnIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="←" GridPane.columnIndex="3" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="7" GridPane.columnIndex="3" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="1" GridPane.columnIndex="3" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" prefWidth="86.0" style="-fx-pref-width: 77;" styleClass="keyboard_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MR" GridPane.columnIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="CE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="8" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="5" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="2" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MS" GridPane.columnIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="C" GridPane.columnIndex="5" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="9" GridPane.columnIndex="5" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="6" GridPane.columnIndex="5" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="3" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_B" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="B" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_C" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="C" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_D" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="D" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_E" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="E" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_F" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="F" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Button fx:id="btn_mc" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MC" GridPane.columnIndex="3" />
+                        <Button fx:id="btn_backspace" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="←" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_7" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="7" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_4" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_1" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="1" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_0" mnemonicParsing="false" prefWidth="86.0" style="-fx-pref-width: 77;" styleClass="keyboard_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.rowIndex="5" />
+                        <Button fx:id="btn_mr" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MR" GridPane.columnIndex="4" />
+                        <Button fx:id="btn_ce" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="CE" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_8" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="8" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_5" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="5" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_2" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="2" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_ms" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MS" GridPane.columnIndex="5" />
+                        <Button fx:id="btn_c" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="C" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_9" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="9" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_6" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="6" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_3" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="3" GridPane.columnIndex="5" GridPane.rowIndex="4" />
                         <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="," GridPane.columnIndex="5" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="M+" GridPane.columnIndex="6" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text=" ± " GridPane.columnIndex="6" GridPane.rowIndex="1" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="/" GridPane.columnIndex="6" GridPane.rowIndex="2" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="*" GridPane.columnIndex="6" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="-" GridPane.columnIndex="6" GridPane.rowIndex="4" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="+" GridPane.columnIndex="6" GridPane.rowIndex="5" />
-                        <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="M-" GridPane.columnIndex="7" />
+                        <Button fx:id="btn_m_add" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="M+" GridPane.columnIndex="6" />
+                        <Button fx:id="btn_change_sign" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text=" ± " GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_divide" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="/" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Button fx:id="btn_multiply" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="*" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Button fx:id="btn_subtract" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="-" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Button fx:id="btn_add" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="+" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Button fx:id="btn_m_subtract" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="M-" GridPane.columnIndex="7" />
                         <Button disable="true" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="√" GridPane.columnIndex="7" GridPane.rowIndex="1" />
                         <Button disable="true" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="\%" GridPane.columnIndex="7" GridPane.rowIndex="2" />
                         <Button disable="true" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="1/x" GridPane.columnIndex="7" GridPane.rowIndex="3" />
-                        <Button mnemonicParsing="false" style="-fx-pref-height: 64;" styleClass="keyboard_button" stylesheets="@keyboard.css" text="=" GridPane.columnIndex="7" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+                        <Button fx:id="btn_equal" mnemonicParsing="false" style="-fx-pref-height: 64;" styleClass="keyboard_button" stylesheets="@keyboard.css" text="=" GridPane.columnIndex="7" GridPane.rowIndex="4" GridPane.rowSpan="2" />
                      </children>
                   </GridPane>
                </children></Pane>
