@@ -513,12 +513,12 @@
                      <children>
                         <RadioButton mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Hex">
                            <toggleGroup>
-                              <ToggleGroup fx:id="number_system" />
+                              <ToggleGroup fx:id="number_systems" />
                            </toggleGroup>
                         </RadioButton>
-                        <RadioButton layoutY="21.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" toggleGroup="$number_system" />
-                        <RadioButton layoutY="42.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Oct" toggleGroup="$number_system" />
-                        <RadioButton layoutY="63.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Bin" toggleGroup="$number_system" />
+                        <RadioButton layoutY="21.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" toggleGroup="$number_systems" />
+                        <RadioButton layoutY="42.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Oct" toggleGroup="$number_systems" />
+                        <RadioButton layoutY="63.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Bin" toggleGroup="$number_systems" />
                      </children>
                   </Group>
                </children>
