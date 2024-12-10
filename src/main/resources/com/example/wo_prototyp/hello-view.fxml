@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.Pane?>
@@ -12,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Pane prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: #eef4fc; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
          <opaqueInsets>
@@ -139,7 +141,7 @@
                         </GridPane>
                      </children>
                   </Pane>
-                  <GridPane hgap="10.0" layoutY="42.0" prefHeight="30.0" prefWidth="209.0">
+                  <GridPane hgap="10.0" layoutY="41.0" prefHeight="30.0" prefWidth="209.0">
                      <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -507,18 +509,29 @@
          <children>
             <Pane fx:id="digit_formats_screen" prefHeight="102.0" prefWidth="81.0" style="-fx-background-color: #d9e5f0; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
                <children>
-                  <RadioButton layoutX="4.0" layoutY="8.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Hex" />
-                  <RadioButton layoutX="4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" />
-                  <RadioButton layoutX="4.0" layoutY="50.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Oct" />
-                  <RadioButton layoutX="4.0" layoutY="71.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Bin" />
+                  <Group layoutX="4.0" layoutY="8.0">
+                     <children>
+                        <RadioButton mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Hex">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="number_system" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton layoutY="21.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" toggleGroup="$number_system" />
+                        <RadioButton layoutY="42.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Oct" toggleGroup="$number_system" />
+                        <RadioButton layoutY="63.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Bin" toggleGroup="$number_system" />
+                     </children>
+                  </Group>
                </children>
             </Pane>
             <Pane layoutX="-1.0" layoutY="108.0" prefHeight="102.0" prefWidth="81.0" style="-fx-background-color: #d9e5f0; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
                <children>
-                  <RadioButton layoutX="4.0" layoutY="8.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Qword" />
-                  <RadioButton layoutX="4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dword" />
-                  <RadioButton layoutX="4.0" layoutY="50.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Word" />
-                  <RadioButton layoutX="4.0" layoutY="71.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Byte" />
+                  <RadioButton layoutX="4.0" layoutY="8.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Qword">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="number_format" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton layoutX="4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dword" toggleGroup="$number_format" />
+                  <RadioButton layoutX="4.0" layoutY="50.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Word" toggleGroup="$number_format" />
+                  <RadioButton layoutX="4.0" layoutY="71.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Byte" toggleGroup="$number_format" />
                </children></Pane>
             <Pane layoutX="87.0" prefHeight="208.0" prefWidth="332.0" style="-fx-background-color: #d9e5f0;">
                <children>
