@@ -60,10 +60,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit48" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit49" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit50" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit51" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane>
@@ -78,10 +78,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit60" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit61" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit62" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
                                     <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="1">
@@ -96,10 +96,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit56" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit57" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit58" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit59" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="2">
@@ -114,10 +114,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit52" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit53" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit54" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit55" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.rowIndex="1">
@@ -251,33 +251,33 @@
                   <Pane layoutX="-1.0" layoutY="1.0" prefHeight="38.0" prefWidth="209.0">
                      <children>
                         <GridPane hgap="10.0" layoutY="4.0" prefHeight="30.0" prefWidth="209.0">
-                           <columnConstraints>
+                          <columnConstraints>
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                           </columnConstraints>
-                           <rowConstraints>
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                           </rowConstraints>
+                          </rowConstraints>
                            <children>
                               <GridPane GridPane.columnIndex="3">
-                                 <columnConstraints>
-                                    <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
-                                    <ColumnConstraints />
+                                <columnConstraints>
+                                  <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
+                                  <ColumnConstraints />
                                     <ColumnConstraints minWidth="10.0" prefWidth="50.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
                                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
-                                 </columnConstraints>
-                                 <rowConstraints>
-                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                 </rowConstraints>
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit32" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit33" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit34" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit35" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane>
@@ -292,10 +292,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit44" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit45" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit46" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit47" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="1">
@@ -310,10 +310,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit40" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit41" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit42" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit43" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="2">
@@ -328,10 +328,10 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <ToggleButton fx:id="btn_bit36" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
-                                    <ToggleButton fx:id="btn_bit37" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
-                                    <ToggleButton fx:id="btn_bit38" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton fx:id="btn_bit39" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
+                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="3" GridPane.rowIndex="1">
@@ -536,24 +536,24 @@
             <Pane layoutX="87.0" prefHeight="208.0" prefWidth="332.0" style="-fx-background-color: #d9e5f0;">
                <children>
                   <GridPane prefHeight="208.0" prefWidth="332.0">
-                     <columnConstraints>
+                    <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
                      <children>
                         <Button alignment="CENTER" disable="true" mnemonicParsing="false" prefHeight="35.0" prefWidth="62.0" styleClass="keyboard_button" stylesheets="@keyboard.css" />
                         <Button mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="Mod" GridPane.columnIndex="1" />
