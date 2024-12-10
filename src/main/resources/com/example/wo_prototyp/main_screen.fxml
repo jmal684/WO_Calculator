@@ -81,7 +81,7 @@
                                     <ToggleButton fx:id="btn_bit60" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="4" />
                                     <ToggleButton fx:id="btn_bit61" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="3" />
                                     <ToggleButton fx:id="btn_bit62" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" GridPane.columnIndex="2" />
-                                    <ToggleButton mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
+                                    <ToggleButton fx:id="btn_bit63" mnemonicParsing="false" prefHeight="25.0" prefWidth="3.0" styleClass="binary_represantation_button" stylesheets="@keyboard.css" text="0" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.columnIndex="1">
