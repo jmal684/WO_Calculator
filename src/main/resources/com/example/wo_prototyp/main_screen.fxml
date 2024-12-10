@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wo_prototyp.MainController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wo_prototyp.MainController">
    <children>
       <Pane prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: #eef4fc; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
          <opaqueInsets>
@@ -527,11 +527,11 @@
                <children>
                   <RadioButton layoutX="4.0" layoutY="8.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Qword">
                      <toggleGroup>
-                        <ToggleGroup fx:id="number_format" />
+                        <ToggleGroup fx:id="number_formats" />
                      </toggleGroup></RadioButton>
-                  <RadioButton layoutX="4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dword" toggleGroup="$number_format" />
-                  <RadioButton layoutX="4.0" layoutY="50.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Word" toggleGroup="$number_format" />
-                  <RadioButton layoutX="4.0" layoutY="71.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Byte" toggleGroup="$number_format" />
+                  <RadioButton layoutX="4.0" layoutY="29.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dword" toggleGroup="$number_formats" />
+                  <RadioButton layoutX="4.0" layoutY="50.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Word" toggleGroup="$number_formats" />
+                  <RadioButton layoutX="4.0" layoutY="71.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Byte" toggleGroup="$number_formats" />
                </children></Pane>
             <Pane layoutX="87.0" prefHeight="208.0" prefWidth="332.0" style="-fx-background-color: #d9e5f0;">
                <children>

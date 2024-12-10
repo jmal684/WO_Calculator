@@ -24,7 +24,7 @@ public class MainController implements Initializable {
             btn_bit62, btn_bit63;
 
     @FXML
-    private ToggleGroup number_systems;
+    private ToggleGroup number_systems, number_formats;
     private List<ToggleButton> binaryRepresentationButtons;
 
 
@@ -32,10 +32,9 @@ public class MainController implements Initializable {
     // initialization
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        System.out.println("INIT");
         initializeBinaryRepresentationToggleButtons();
         initializeNumberSystemsToggleGroup();
-
+        initializeNumberFormatsToggleGroup();
     }
     private void initializeBinaryRepresentationToggleButtons(){
         binaryRepresentationButtons = List.of(new ToggleButton[]{btn_bit0, btn_bit1, btn_bit2, btn_bit3, btn_bit4, btn_bit5, btn_bit6, btn_bit7, btn_bit8, btn_bit9, btn_bit10,
@@ -63,6 +62,16 @@ public class MainController implements Initializable {
 
                 // TODO Implement converting to different number systems, preferably using a switch
 
+            }
+        });
+    }
+    private void initializeNumberFormatsToggleGroup(){
+        number_formats.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
+            @Override
+            public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
+                RadioButton clicked = (RadioButton) t1.getToggleGroup().getSelectedToggle();
+
+                //TODO Implement converting to different number formats, preferably using a switch
             }
         });
     }
