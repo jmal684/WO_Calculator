@@ -1,10 +1,14 @@
 package com.example.wo_prototyp;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ToggleButton;
 
-public class MainController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainController implements Initializable {
     @FXML
     private Label welcomeText;
 
@@ -19,9 +23,10 @@ public class MainController {
 
     private ToggleButton[] binaryRepresentationButtons;
 
-    @FXML
-    public void initialize(){
-        initializeBinaryRepresentationToggleButtons();
+
+
+    private void binaryRepresentationButton(){
+
     }
 
     private void initializeBinaryRepresentationToggleButtons(){
@@ -32,10 +37,25 @@ public class MainController {
                 btn_bit41, btn_bit42, btn_bit43, btn_bit44, btn_bit45, btn_bit46, btn_bit47, btn_bit48, btn_bit49, btn_bit50,
                 btn_bit51, btn_bit52, btn_bit53, btn_bit54, btn_bit55, btn_bit56, btn_bit57, btn_bit58, btn_bit59, btn_bit60, btn_bit61,
                 btn_bit62, btn_bit63};
+
+
+        for(ToggleButton toggleButton: binaryRepresentationButtons)
+        {
+            toggleButton.setOnAction(actionEvent -> {
+                toggleButton.setText(toggleButton.getText().equals("0") ? "1" : "0");
+                System.out.println("Button was clicked");
+            });
+        }
     }
 
     @FXML
     protected void onHelloButtonClick() {
         welcomeText.setText("Welcome to JavaFX Application!");
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        System.out.println("INIT");
+        initializeBinaryRepresentationToggleButtons();
     }
 }
