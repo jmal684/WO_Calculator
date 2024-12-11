@@ -4,10 +4,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleButton;
-import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -24,10 +21,14 @@ public class MainController implements Initializable {
             btn_bit41, btn_bit42, btn_bit43, btn_bit44, btn_bit45, btn_bit46, btn_bit47, btn_bit48, btn_bit49, btn_bit50,
             btn_bit51, btn_bit52, btn_bit53, btn_bit54, btn_bit55, btn_bit56, btn_bit57, btn_bit58, btn_bit59, btn_bit60, btn_bit61,
             btn_bit62, btn_bit63;
+    @FXML
+    private Label label_bit_63, label_bit_47, label_bit_32, label_bit_31, label_bit_15;
+
 
     @FXML
     private ToggleGroup number_systems, number_formats;
     private ArrayList<ToggleButton> binaryRepresentationButtons;
+    private Label[] bitLabels;
 
 
 
@@ -46,6 +47,8 @@ public class MainController implements Initializable {
                 btn_bit41, btn_bit42, btn_bit43, btn_bit44, btn_bit45, btn_bit46, btn_bit47, btn_bit48, btn_bit49, btn_bit50,
                 btn_bit51, btn_bit52, btn_bit53, btn_bit54, btn_bit55, btn_bit56, btn_bit57, btn_bit58, btn_bit59, btn_bit60, btn_bit61,
                 btn_bit62, btn_bit63}));
+
+        bitLabels = new Label[]{label_bit_63, label_bit_47, label_bit_32, label_bit_31, label_bit_15};
 
         for(ToggleButton toggleButton: binaryRepresentationButtons)
         {
@@ -82,18 +85,62 @@ public class MainController implements Initializable {
 
     // updating view components
     private void updateBinaryRepresentationScreen(String numberFormat){
-        int avaibleBits =
-                switch (numberFormat)
-                {
-                    case "Qword" -> 64;
-                    case "Dword" -> 32;
-                    case "Word" -> 16;
-                    case "Byte" -> 8;
-                    default -> 0;
-                };
+//        int availableBits =
+//                switch (numberFormat)
+//                {
+//                    case "Qword" -> 64;
+//                    case "Dword" -> 32;
+//                    case "Word" -> 16;
+//                    case "Byte" -> 8;
+//                    default -> 0;
+//                };
+
+        int availableBits = 0, labelSwitcherIndicator = 0;
+
+        labelSwitcherIndicator = switch (numberFormat) {
+            case "Qword" -> {
+                availableBits = 64;
+                yield 6;
+            }
+            case "Dword" -> {
+                availableBits = 32;
+                yield 3;
+            }
+            case "Word" -> {
+                availableBits = 16;
+                yield 2;
+            }
+            case "Byte" -> {
+                availableBits = 8;
+                yield 1;
+            }
+            default -> labelSwitcherIndicator;
+        };
+
+        for (int i = 0; i < bitLabels.length; i++)
+            bitLabels[i].setVisible(i > bitLabels.length - labelSwitcherIndicator);
+
+
 
         for (int i = binaryRepresentationButtons.size() - 1; i >= 0; i--)
-            binaryRepresentationButtons.get(i).setVisible(i < avaibleBits);
+        {
+            ToggleButton bitButton = binaryRepresentationButtons.get(i);
+
+            if(i >= availableBits)
+            {
+                bitButton.setVisible(false);
+                bitButton.setDisable(true);
+                bitButton.setText("0");
+            }
+            else
+            {
+                bitButton.setVisible(true);
+                bitButton.setDisable(false);
+            }
+
+
+
+        }
 
 
         //TODO Disable bit markings

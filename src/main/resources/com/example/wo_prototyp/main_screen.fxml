@@ -131,7 +131,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="63" />
+                                    <Label fx:id="label_bit_63" text="63" />
                                  </children>
                               </GridPane>
                            </children>
@@ -236,7 +236,7 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <children>
-                              <Label text="31" />
+                              <Label fx:id="label_bit_31" text="31" />
                            </children>
                         </GridPane>
                      </children>
@@ -345,7 +345,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="32" GridPane.columnIndex="3">
+                                    <Label fx:id="label_bit_32" text="32" GridPane.columnIndex="3">
                                        <padding>
                                           <Insets right="1.0" />
                                        </padding>
@@ -363,7 +363,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="47" />
+                                    <Label fx:id="label_bit_47" text="47" />
                                  </children>
                               </GridPane>
                            </children>
@@ -474,7 +474,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="0" GridPane.columnIndex="4" />
+                                    <Label fx:id="label_bit_0" text="0" GridPane.columnIndex="4" />
                                  </children>
                               </GridPane>
                               <GridPane GridPane.rowIndex="1">
@@ -488,7 +488,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                                  <children>
-                                    <Label text="15" />
+                                    <Label fx:id="label_bit_15" text="15" />
                                  </children>
                               </GridPane>
                            </children>
