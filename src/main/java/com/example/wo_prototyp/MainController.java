@@ -23,13 +23,11 @@ public class MainController implements Initializable {
             btn_bit62, btn_bit63;
     @FXML
     private Label label_bit_63, label_bit_47, label_bit_32, label_bit_31, label_bit_15;
-
-
     @FXML
     private ToggleGroup number_systems, number_formats;
+
     private ArrayList<ToggleButton> binaryRepresentationButtons;
     private Label[] bitLabels;
-
 
 
     // initialization
@@ -59,7 +57,6 @@ public class MainController implements Initializable {
         }
     }
     private void initializeNumberSystemsToggleGroup(){
-//        number_systems.selectedToggleProperty().addListener((observable, oldValue, newValue) -> System.out.println(newValue + "Was selected"));
         number_systems.selectedToggleProperty().addListener(new ChangeListener<Toggle>() {
             @Override
             public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
@@ -85,16 +82,6 @@ public class MainController implements Initializable {
 
     // updating view components
     private void updateBinaryRepresentationScreen(String numberFormat){
-//        int availableBits =
-//                switch (numberFormat)
-//                {
-//                    case "Qword" -> 64;
-//                    case "Dword" -> 32;
-//                    case "Word" -> 16;
-//                    case "Byte" -> 8;
-//                    default -> 0;
-//                };
-
         int availableBits = 0, labelSwitcherIndicator = 0;
 
         labelSwitcherIndicator = switch (numberFormat) {
@@ -120,8 +107,6 @@ public class MainController implements Initializable {
         for (int i = 0; i < bitLabels.length; i++)
             bitLabels[i].setVisible(i > bitLabels.length - labelSwitcherIndicator);
 
-
-
         for (int i = binaryRepresentationButtons.size() - 1; i >= 0; i--)
         {
             ToggleButton bitButton = binaryRepresentationButtons.get(i);
@@ -137,14 +122,6 @@ public class MainController implements Initializable {
                 bitButton.setVisible(true);
                 bitButton.setDisable(false);
             }
-
-
-
         }
-
-
-        //TODO Disable bit markings
     }
-
-
 }
