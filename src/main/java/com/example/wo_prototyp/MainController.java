@@ -9,7 +9,6 @@ import javafx.scene.control.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import java.util.ResourceBundle;
 
 public class MainController implements Initializable {
@@ -22,11 +21,16 @@ public class MainController implements Initializable {
             btn_bit51, btn_bit52, btn_bit53, btn_bit54, btn_bit55, btn_bit56, btn_bit57, btn_bit58, btn_bit59, btn_bit60, btn_bit61,
             btn_bit62, btn_bit63;
     @FXML
+    private Button btn_A, btn_B, btn_C, btn_D,btn_E, btn_F, btn_0, btn_1, btn_2, btn_3, btn_4, btn_5, btn_6, btn_7, btn_8, btn_9;
+    @FXML
     private Label label_bit_63, label_bit_47, label_bit_32, label_bit_31, label_bit_15;
+    @FXML
+    private Label output_screen_label;
     @FXML
     private ToggleGroup number_systems, number_formats;
 
     private ArrayList<ToggleButton> binaryRepresentationButtons;
+    private Button[] keyboardKeysButtons;
     private Label[] bitLabels;
 
 
@@ -36,6 +40,7 @@ public class MainController implements Initializable {
         initializeBinaryRepresentationToggleButtons();
         initializeNumberSystemsToggleGroup();
         initializeNumberFormatsToggleGroup();
+        initializeKeyboard();
     }
     private void initializeBinaryRepresentationToggleButtons(){
         binaryRepresentationButtons = new ArrayList<ToggleButton>(Arrays.asList(new ToggleButton[]{btn_bit0, btn_bit1, btn_bit2, btn_bit3, btn_bit4, btn_bit5, btn_bit6, btn_bit7, btn_bit8, btn_bit9, btn_bit10,
@@ -63,6 +68,7 @@ public class MainController implements Initializable {
                 RadioButton clicked = (RadioButton) t1.getToggleGroup().getSelectedToggle();
 
                 // TODO Implement converting to different number systems, preferably using a switch
+                updateKeyboardKeysAvailability(clicked.getText());
 
             }
         });
@@ -78,7 +84,11 @@ public class MainController implements Initializable {
             }
         });
     }
+    private void initializeKeyboard(){
+        keyboardKeysButtons = new Button[]{btn_A, btn_B, btn_C, btn_D, btn_E, btn_F, btn_9, btn_8, btn_7, btn_6, btn_5, btn_4, btn_3, btn_2, btn_1, btn_0};
 
+        //TODO Implement onAction for getting user's input
+    }
 
     // updating view components
     private void updateBinaryRepresentationScreen(String numberFormat){
@@ -122,6 +132,24 @@ public class MainController implements Initializable {
                 bitButton.setVisible(true);
                 bitButton.setDisable(false);
             }
+        }
+    }
+    private void updateKeyboardKeysAvailability(String numberSystem){
+        int amountOfAvailableKeys =
+                switch (numberSystem){
+            case "Hex" -> 16;
+            case "Dec" -> 10;
+            case "Oct" -> 8;
+            case "Bin" -> 2;
+            default -> 0;
+                };
+
+        for(int i = 0; i < keyboardKeysButtons.length; i++)
+        {
+            if(i < (keyboardKeysButtons.length - amountOfAvailableKeys))
+                keyboardKeysButtons[i].setDisable(true);
+            else
+                keyboardKeysButtons[i].setDisable(false);
         }
     }
 }
