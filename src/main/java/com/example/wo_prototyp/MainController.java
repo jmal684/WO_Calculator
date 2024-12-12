@@ -33,7 +33,7 @@ public class MainController implements Initializable {
     private ArrayList<ToggleButton> binaryRepresentationButtons;
     private Button[] keyboardKeysButtons;
     private Label[] bitLabels;
-    private String currentOutput;
+    private String currentOutput, currentNumberSystem, currentNumberFormat; // a possibility of using enums for storing number systems and formats
 
 
     // initialization
@@ -70,10 +70,11 @@ public class MainController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
                 RadioButton clicked = (RadioButton) t1.getToggleGroup().getSelectedToggle();
+                currentNumberSystem = clicked.getText();
 
                 // TODO Implement converting to different number systems, preferably using a switch
-                updateKeyboardKeysAvailability(clicked.getText());
 
+                updateKeyboardKeysAvailability(currentNumberSystem);
             }
         });
     }
@@ -82,9 +83,11 @@ public class MainController implements Initializable {
             @Override
             public void changed(ObservableValue<? extends Toggle> observableValue, Toggle toggle, Toggle t1) {
                 RadioButton clicked = (RadioButton) t1.getToggleGroup().getSelectedToggle();
+                currentNumberFormat = clicked.getText();
 
                 //TODO Implement converting to different number formats, preferably using a switch
-                updateBinaryRepresentationScreen(clicked.getText());
+
+                updateBinaryRepresentationScreen(currentNumberFormat);
             }
         });
     }
