@@ -526,7 +526,7 @@
                               <ToggleGroup fx:id="number_systems" />
                            </toggleGroup>
                         </RadioButton>
-                        <RadioButton layoutY="21.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" toggleGroup="$number_systems" />
+                        <RadioButton layoutY="21.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" selected="true" styleClass="radio_button" stylesheets="@keyboard.css" text="Dec" toggleGroup="$number_systems" />
                         <RadioButton layoutY="42.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Oct" toggleGroup="$number_systems" />
                         <RadioButton layoutY="63.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="74.0" styleClass="radio_button" stylesheets="@keyboard.css" text="Bin" toggleGroup="$number_systems" />
                      </children>
