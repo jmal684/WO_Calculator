@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wo_prototyp.MainController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="439.0" style="-fx-background-color: #d9e5f0;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wo_prototyp.MainController">
    <children>
       <Pane prefHeight="53.0" prefWidth="419.0" style="-fx-background-color: #eef4fc; -fx-border-style: solid; -fx-border-color: #8996a4; -fx-border-width: 1;">
          <opaqueInsets>
@@ -588,7 +588,7 @@
                         <Button fx:id="btn_E" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="E" GridPane.columnIndex="2" GridPane.rowIndex="4" />
                         <Button fx:id="btn_F" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="F" GridPane.columnIndex="2" GridPane.rowIndex="5" />
                         <Button fx:id="btn_mc" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="MC" GridPane.columnIndex="3" />
-                        <Button fx:id="btn_backspace" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="←" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Button fx:id="btn_backspace" mnemonicParsing="false" onAction="#backspaceButtonHandler" styleClass="keyboard_button" stylesheets="@keyboard.css" text="←" GridPane.columnIndex="3" GridPane.rowIndex="1" />
                         <Button fx:id="btn_7" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="7" GridPane.columnIndex="3" GridPane.rowIndex="2" />
                         <Button fx:id="btn_4" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="4" GridPane.columnIndex="3" GridPane.rowIndex="3" />
                         <Button fx:id="btn_1" mnemonicParsing="false" styleClass="keyboard_button" stylesheets="@keyboard.css" text="1" GridPane.columnIndex="3" GridPane.rowIndex="4" />

@@ -2,6 +2,7 @@ package com.example.wo_prototyp;
 
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
@@ -32,6 +33,7 @@ public class MainController implements Initializable {
     private ArrayList<ToggleButton> binaryRepresentationButtons;
     private Button[] keyboardKeysButtons;
     private Label[] bitLabels;
+    private String currentOutput;
 
 
     // initialization
@@ -41,6 +43,8 @@ public class MainController implements Initializable {
         initializeNumberSystemsToggleGroup();
         initializeNumberFormatsToggleGroup();
         initializeKeyboard();
+
+        currentOutput = output_screen_label.getText();
     }
     private void initializeBinaryRepresentationToggleButtons(){
         binaryRepresentationButtons = new ArrayList<ToggleButton>(Arrays.asList(new ToggleButton[]{btn_bit0, btn_bit1, btn_bit2, btn_bit3, btn_bit4, btn_bit5, btn_bit6, btn_bit7, btn_bit8, btn_bit9, btn_bit10,
@@ -87,7 +91,13 @@ public class MainController implements Initializable {
     private void initializeKeyboard(){
         keyboardKeysButtons = new Button[]{btn_A, btn_B, btn_C, btn_D, btn_E, btn_F, btn_9, btn_8, btn_7, btn_6, btn_5, btn_4, btn_3, btn_2, btn_1, btn_0};
 
-        //TODO Implement onAction for getting user's input
+        for(Button key: keyboardKeysButtons)
+        {
+            key.setOnAction(e -> {
+                updateOutputScreenLabel(key.getText(), true);
+            });
+        }
+
     }
 
     // updating view components
@@ -145,11 +155,33 @@ public class MainController implements Initializable {
                 };
 
         for(int i = 0; i < keyboardKeysButtons.length; i++)
-        {
-            if(i < (keyboardKeysButtons.length - amountOfAvailableKeys))
-                keyboardKeysButtons[i].setDisable(true);
-            else
-                keyboardKeysButtons[i].setDisable(false);
-        }
+            keyboardKeysButtons[i].setDisable(i < (keyboardKeysButtons.length - amountOfAvailableKeys));
     }
+    private void updateOutputScreenLabel(String s, boolean add){
+        if(add)
+        {
+            if(currentOutput.charAt(0) == '0')
+                currentOutput = s;
+            else
+                currentOutput += s;
+
+        }
+        else
+        {
+            if(currentOutput.length() - 1 < 1)
+                currentOutput = "0";
+            else
+                currentOutput = currentOutput.substring(0, currentOutput.length() - 1);
+        }
+
+        output_screen_label.setText(currentOutput);
+    }
+
+    // action functions
+    @FXML
+    private void backspaceButtonHandler(ActionEvent event){
+        updateOutputScreenLabel("", false);
+    }
+
+
 }
